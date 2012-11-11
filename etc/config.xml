@@ -1,0 +1,10 @@
+<config>
+	<item file="jogl_lib.jar" link="http://www.havenandhearth.com/java/jogl/jogl-natives-windows-i586.jar" os="Windows" arch="x86" extract="."/>
+	<item file="jogl.jar" link="http://www.havenandhearth.com/java/jogl/jogl.jar"/>
+	<item file="gluegen_lib.jar" link="http://www.havenandhearth.com/java/jogl/gluegen-rt-natives-windows-i586.jar" os="Windows" arch="x86" extract="."/>
+	<item file="gluegen-rt.jar" link="http://www.havenandhearth.com/java/jogl/gluegen-rt.jar"/>
+	<item file="salem-res.jar" link="http://plymouth.seatribe.se/java/salem-res.jar" />
+	<item file="builtin-res.jar" link="http://plymouth.seatribe.se/java/builtin-res.jar" />
+	<item file="salem.jar" link="http://dl.dropbox.com/u/18779594/salem/salem.jar" />
+	<item file="client-res.jar" link="http://dl.dropbox.com/u/18779594/salem/client-res.jar" />
+</config>
