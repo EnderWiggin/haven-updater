@@ -1,7 +1,54 @@
 <config>
+	<!-- WINDOWS -->
 	<item file="jogl_lib.jar" link="http://www.havenandhearth.com/java/jogl/jogl-natives-windows-i586.jar" os="Windows" arch="x86" extract="."/>
-	<item file="jogl.jar" link="http://www.havenandhearth.com/java/jogl/jogl.jar"/>
 	<item file="gluegen_lib.jar" link="http://www.havenandhearth.com/java/jogl/gluegen-rt-natives-windows-i586.jar" os="Windows" arch="x86" extract="."/>
+	
+	<item file="jogl_lib.jar" link="http://www.havenandhearth.com/java/jogl/jogl-natives-windows-amd64.jar" os="Windows" arch="amd64" extract="."/>
+	<item file="gluegen_lib.jar" link="http://www.havenandhearth.com/java/jogl/gluegen-rt-natives-windows-amd64.jar" os="Windows" arch="amd64" extract="."/>
+	
+	<item file="jogl_lib.jar" link="http://www.havenandhearth.com/java/jogl/jogl-natives-windows-amd64.jar" os="Windows" arch="x86_64" extract="."/>
+	<item file="gluegen_lib.jar" link="http://www.havenandhearth.com/java/jogl/gluegen-rt-natives-windows-amd64.jar" os="Windows" arch="x86_64" extract="."/>
+	
+	<!-- SOLARIS -->
+	<item file="jogl_lib.jar" link="http://www.havenandhearth.com/java/jogl/jogl-natives-solaris-sparc.jar" os="SunOS" arch="sparc" extract="."/>
+	<item file="gluegen_lib.jar" link="http://www.havenandhearth.com/java/jogl/gluegen-rt-natives-solaris-sparc.jar" os="SunOS" arch="sparc" extract="."/>
+	
+	<item file="jogl_lib.jar" link="http://www.havenandhearth.com/java/jogl/jogl-natives-solaris-sparcv9.jar" os="SunOS" arch="sparcv9" extract="."/>
+	<item file="gluegen_lib.jar" link="http://www.havenandhearth.com/java/jogl/gluegen-rt-natives-solaris-sparcv9.jar" os="SunOS" arch="sparcv9" extract="."/>
+	
+	<item file="jogl_lib.jar" link="http://www.havenandhearth.com/java/jogl/jogl-natives-solaris-i586.jar" os="SunOS" arch="x86" extract="."/>
+	<item file="gluegen_lib.jar" link="http://www.havenandhearth.com/java/jogl/gluegen-rt-natives-solaris-i586.jar" os="SunOS" arch="x86" extract="."/>
+	
+	<item file="jogl_lib.jar" link="http://www.havenandhearth.com/java/jogl/jogl-natives-solaris-amd64.jar" os="SunOS" arch="amd64" extract="."/>
+	<item file="gluegen_lib.jar" link="http://www.havenandhearth.com/java/jogl/gluegen-rt-natives-solaris-amd64.jar" os="SunOS" arch="amd64" extract="."/>
+	
+	<item file="jogl_lib.jar" link="http://www.havenandhearth.com/java/jogl/jogl-natives-solaris-amd64.jar" os="SunOS" arch="x86_64" extract="."/>
+	<item file="gluegen_lib.jar" link="http://www.havenandhearth.com/java/jogl/gluegen-rt-natives-solaris-amd64.jar" os="SunOS" arch="x86_64" extract="."/>
+	
+	<!-- LINUX -->
+	<item file="jogl_lib.jar" link="http://www.havenandhearth.com/java/jogl/jogl-natives-linux-i586.jar" os="Linux" arch="i386" extract="."/>
+	<item file="gluegen_lib.jar" link="http://www.havenandhearth.com/java/jogl/gluegen-rt-natives-linux-i586.jar" os="Linux" arch="i386" extract="."/>
+	
+	<item file="jogl_lib.jar" link="http://www.havenandhearth.com/java/jogl/jogl-natives-linux-i586.jar" os="Linux" arch="x86" extract="."/>
+	<item file="gluegen_lib.jar" link="http://www.havenandhearth.com/java/jogl/gluegen-rt-natives-linux-i586.jar" os="Linux" arch="x86" extract="."/>
+	
+	<item file="jogl_lib.jar" link="http://www.havenandhearth.com/java/jogl/jogl-natives-linux-amd64.jar" os="Linux" arch="amd64" extract="."/>
+	<item file="gluegen_lib.jar" link="http://www.havenandhearth.com/java/jogl/gluegen-rt-natives-linux-amd64.jar" os="Linux" arch="amd64" extract="."/>
+	
+	<item file="jogl_lib.jar" link="http://www.havenandhearth.com/java/jogl/jogl-natives-linux-amd64.jar" os="Linux" arch="x86_64" extract="."/>
+	<item file="gluegen_lib.jar" link="http://www.havenandhearth.com/java/jogl/gluegen-rt-natives-linux-amd64.jar" os="Linux" arch="x86_64" extract="."/>
+	
+	<!-- MAC OS X -->
+	<item file="jogl_lib.jar" link="http://www.havenandhearth.com/java/jogl/jogl-natives-macosx-i586.jar" os="Mac OS X" arch="i386" extract="."/>
+	<item file="gluegen_lib.jar" link="http://www.havenandhearth.com/java/jogl/gluegen-rt-natives-macosx-i586.jar" os="Mac OS X" arch="i386" extract="."/>
+	
+	<item file="jogl_lib.jar" link="http://www.havenandhearth.com/java/jogl/jogl-natives-macosx-i586.jar" os="Mac OS X" arch="ppc" extract="."/>
+	<item file="gluegen_lib.jar" link="http://www.havenandhearth.com/java/jogl/gluegen-rt-natives-macosx-i586.jar" os="Mac OS X" arch="ppc" extract="."/>
+	
+	<item file="jogl_lib.jar" link="http://www.havenandhearth.com/java/jogl/jogl-natives-macosx-amd64.jar" os="Mac OS X" arch="x86_64" extract="."/>
+	<item file="gluegen_lib.jar" link="http://www.havenandhearth.com/java/jogl/gluegen-rt-natives-macosx-amd64.jar" os="Mac OS X" arch="x86_64" extract="."/>
+	
+	<item file="jogl.jar" link="http://www.havenandhearth.com/java/jogl/jogl.jar"/>
 	<item file="gluegen-rt.jar" link="http://www.havenandhearth.com/java/jogl/gluegen-rt.jar"/>
 	<item file="salem-res.jar" link="http://plymouth.seatribe.se/java/salem-res.jar" />
 	<item file="builtin-res.jar" link="http://plymouth.seatribe.se/java/builtin-res.jar" />
