@@ -9,6 +9,7 @@
                 <attribute name="Class-Path" value="."/>
             </manifest>
             <fileset dir="bin"/>
+        	<fileset file="etc/config.xml"/>
         </jar>
     </target>
 </project>
