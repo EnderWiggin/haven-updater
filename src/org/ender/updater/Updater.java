@@ -17,52 +17,45 @@ import java.util.zip.ZipFile;
 import org.ender.updater.UpdaterConfig.Item;
 
 public class Updater {
-
-    public Updater(){
-	UpdaterConfig cfg = new UpdaterConfig(new File("config.xml"));
-	List<Item> update = new ArrayList<UpdaterConfig.Item>();
-	for(Item item : cfg.items){
-	    if(!correct_platform(item)){continue;}
-	    set_date(item);
-	    if(has_update(item)){
-		System.out.println(String.format("Updates found for '%s'", item.file));
-		update.add(item);
-	    } else {
-		System.out.println(String.format("No updates for '%s'", item.file));
-	    }
-	}
-	for (Item item: update){
-	    download(item);
-	    if(item.extract.length() > 0){
-		extract(item);
-	    }
-	}
+    private UpdaterConfig cfg;
+    private IUpdaterListener listener;
+    public Updater(IUpdaterListener listener){
+	this.listener = listener;
+	cfg = new UpdaterConfig(new File("config.xml"));
     }
 
-    private void extract(Item item) {
-	System.out.println(String.format("Unpacking '%s'", item.file));
-	try {
-	    ZipFile zip;
-	    zip = new ZipFile(item.file);
-	    Enumeration<? extends ZipEntry> contents=zip.entries();
-	    while (contents.hasMoreElements()) {
-		ZipEntry file=(ZipEntry)contents.nextElement();
-		String name = file.getName();
-		if(name.indexOf("META-INF") == 0){continue;}
-		System.out.println("\t"+name);
-		ReadableByteChannel rbc = Channels.newChannel(zip.getInputStream(file));
-		FileOutputStream fos = new FileOutputStream(item.extract+File.separatorChar+name);
-		long position = 0;
-		long size = file.getSize();
-		int step = 20480;
-		while(position < size){
-		    position += fos.getChannel().transferFrom(rbc, position, step);
+    public void update() {
+	(new Thread(new Runnable() {
+
+	    @Override
+	    public void run() {
+		List<Item> update = new ArrayList<UpdaterConfig.Item>();
+		for(Item item : cfg.items){
+		    if(!correct_platform(item)){continue;}
+		    set_date(item);
+		    if(has_update(item)){
+			listener.log(String.format("Updates found for '%s'", item.file));
+			update.add(item);
+		    } else {
+			listener.log(String.format("No updates for '%s'", item.file));
+		    }
 		}
-		fos.close();
+		for (Item item: update){
+		    download(item);
+		    if(item.extract.length() > 0){
+			extract(item);
+		    }
+		}
+		
+		listener.fisnished();
 	    }
-	} catch (IOException e) {
-	    e.printStackTrace();
-	}
+	})).start();
+    }
+
+    private boolean correct_platform(Item item) {
+	String os = System.getProperty("os.name");
+	String arch = System.getProperty("os.arch");
+	return (os.indexOf(item.os) >= 0) && (arch.equals(item.arch) || item.arch.length() == 0);
     }
 
     private void set_date(Item item) {
@@ -93,14 +86,8 @@ public class Updater {
 	return false;
     }
 
-    private boolean correct_platform(Item item) {
-	String os = System.getProperty("os.name");
-	String arch = System.getProperty("os.arch");
-	return (os.indexOf(item.os) >= 0) && (arch.equals(item.arch) || item.arch.length() == 0);
-    }
-
     private void download(Item item) {
-	System.out.println(String.format("Downloading '%s'", item.file));
+	listener.log(String.format("Downloading '%s'", item.file));
 	URL link;
 	try {
 	    link = new URL(item.link);
@@ -108,12 +95,41 @@ public class Updater {
 	    FileOutputStream fos = new FileOutputStream(item.file);
 	    long position = 0;
 	    int step = 20480;
+	    listener.progress(position, item.size);
 	    while(position < item.size){
 		position += fos.getChannel().transferFrom(rbc, position, step);
+		listener.progress(position, item.size);
 	    }
+	    listener.progress(0, item.size);
 	    fos.close();
 	} catch (MalformedURLException e) {
 	    e.printStackTrace();
+	} catch (IOException e) {
+	    e.printStackTrace();
+	}
+    }
+
+    private void extract(Item item) {
+	listener.log(String.format("Unpacking '%s'", item.file));
+	try {
+	    ZipFile zip;
+	    zip = new ZipFile(item.file);
+	    Enumeration<? extends ZipEntry> contents=zip.entries();
+	    while (contents.hasMoreElements()) {
+		ZipEntry file=(ZipEntry)contents.nextElement();
+		String name = file.getName();
+		if(name.indexOf("META-INF") == 0){continue;}
+		listener.log("\t"+name);
+		ReadableByteChannel rbc = Channels.newChannel(zip.getInputStream(file));
+		FileOutputStream fos = new FileOutputStream(item.extract+File.separatorChar+name);
+		long position = 0;
+		long size = file.getSize();
+		int step = 20480;
+		while(position < size){
+		    position += fos.getChannel().transferFrom(rbc, position, step);
+		}
+		fos.close();
+	    }
 	} catch (IOException e) {
 	    e.printStackTrace();
 	}
