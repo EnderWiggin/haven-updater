@@ -1,5 +1,6 @@
 package org.ender.updater;
 
+import java.io.File;
 import java.io.IOException;
 
 import javax.swing.BoxLayout;
@@ -53,7 +54,8 @@ public class Main extends JFrame implements IUpdaterListener{
     @Override
     public void fisnished() {
 	log("Starting client...");
-	ProcessBuilder pb = new ProcessBuilder("javaw", "-Xmx512m", "-jar", "salem.jar", "-U", "http://plymouth.seatribe.se/res/", "plymouth.seatribe.se");
+	String libs = String.format("-Djava.library.path=%%PATH%%%s.", File.pathSeparator);
+	ProcessBuilder pb = new ProcessBuilder("java", "-Xmx512m", libs, "-jar", "salem.jar", "-U", "http://plymouth.seatribe.se/res/", "plymouth.seatribe.se");
 	try {
 	    pb.start();
 	} catch (IOException e) {
