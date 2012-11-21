@@ -1,4 +1,4 @@
-<config>
+<config jar="salem.jar" mem="768m" server="plymouth.seatribe.se" res="http://plymouth.seatribe.se/res/">
 	<!-- WINDOWS -->
 	<item file="jogl_lib.jar" link="http://www.havenandhearth.com/java/jogl/jogl-natives-windows-i586.jar" os="Windows" arch="x86" extract="."/>
 	<item file="gluegen_lib.jar" link="http://www.havenandhearth.com/java/jogl/gluegen-rt-natives-windows-i586.jar" os="Windows" arch="x86" extract="."/>

@@ -17,7 +17,7 @@ import java.util.zip.ZipFile;
 import org.ender.updater.UpdaterConfig.Item;
 
 public class Updater {
-    private UpdaterConfig cfg;
+    public UpdaterConfig cfg;
     private IUpdaterListener listener;
     public Updater(IUpdaterListener listener){
 	this.listener = listener;

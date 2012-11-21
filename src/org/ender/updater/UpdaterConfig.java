@@ -13,6 +13,7 @@ import javax.xml.parsers.DocumentBuilderFactory;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
+import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
@@ -23,6 +24,8 @@ public class UpdaterConfig {
     private static final String OS = "os";
     private static final String FILE = "file";
     private static final String LINK = "link";
+    
+    public String mem, res, server, jar;
 
     List<Item> items = new ArrayList<UpdaterConfig.Item>();
 
@@ -34,6 +37,12 @@ public class UpdaterConfig {
 	try {
 	    builder = factory.newDocumentBuilder();
 	    Document doc = builder.parse(file);
+	    
+	    NamedNodeMap attrs = doc.getDocumentElement().getAttributes();
+	    mem = attrs.getNamedItem("mem").getNodeValue();
+	    res = attrs.getNamedItem("res").getNodeValue();
+	    server = attrs.getNamedItem("server").getNodeValue();
+	    jar = attrs.getNamedItem("jar").getNodeValue();
 
 	    NodeList groupNodes = doc.getElementsByTagName(ITEM);
 	    for (int i = 0; i < groupNodes.getLength(); i++) {

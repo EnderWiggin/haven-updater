@@ -13,6 +13,7 @@ import javax.swing.JTextArea;
 public class Main extends JFrame implements IUpdaterListener{
     private static final int PROGRESS_MAX = 1024;
     private static final long serialVersionUID = 1L;
+    private static Updater updater;
 
     public static void main(String[] args) {
 	try {
@@ -23,8 +24,8 @@ public class Main extends JFrame implements IUpdaterListener{
 	gui.setSize(350, 450);
 	gui.log("Checking for updates...");
 
-	Updater u = new Updater(gui);
-	u.update();
+	updater = new Updater(gui);
+	updater.update();
     }
 
     private JTextArea logbox;
@@ -55,7 +56,8 @@ public class Main extends JFrame implements IUpdaterListener{
     public void fisnished() {
 	log("Starting client...");
 	String libs = String.format("-Djava.library.path=%%PATH%%%s.", File.pathSeparator);
-	ProcessBuilder pb = new ProcessBuilder("java", "-Xmx512m", libs, "-jar", "salem.jar", "-U", "http://plymouth.seatribe.se/res/", "plymouth.seatribe.se");
+	UpdaterConfig cfg = updater.cfg;
+	ProcessBuilder pb = new ProcessBuilder("java", "-Xmx"+cfg.mem, libs, "-jar", cfg.jar, "-U", cfg.res, cfg.server);
 	try {
 	    pb.start();
 	} catch (IOException e) {
