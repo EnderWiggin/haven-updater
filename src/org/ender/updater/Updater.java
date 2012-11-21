@@ -42,7 +42,7 @@ public class Updater {
 		}
 		for (Item item: update){
 		    download(item);
-		    if(item.extract.length() > 0){
+		    if(item.extract != null){
 			extract(item);
 		    }
 		}
@@ -59,9 +59,8 @@ public class Updater {
     }
 
     private void set_date(Item item) {
-	File file = new File(item.file);
-	if(file.exists()){ 
-	    item.date = file.lastModified();
+	if(item.file.exists()){ 
+	    item.date = item.file.lastModified();
 	}
     }
 
@@ -121,7 +120,7 @@ public class Updater {
 		if(name.indexOf("META-INF") == 0){continue;}
 		listener.log("\t"+name);
 		ReadableByteChannel rbc = Channels.newChannel(zip.getInputStream(file));
-		FileOutputStream fos = new FileOutputStream(item.extract+File.separatorChar+name);
+		FileOutputStream fos = new FileOutputStream(new File(item.extract, name));
 		long position = 0;
 		long size = file.getSize();
 		int step = 20480;

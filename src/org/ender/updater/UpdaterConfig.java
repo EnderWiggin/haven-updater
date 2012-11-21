@@ -1,5 +1,6 @@
 package org.ender.updater;
 
+import java.io.File;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
@@ -22,10 +23,15 @@ public class UpdaterConfig {
     private static final String LINK = "link";
     
     public String mem, res, server, jar;
+    public static File dir = new File(System.getProperty("user.home"), "/Salem/bin");
 
     List<Item> items = new ArrayList<UpdaterConfig.Item>();
 
     public UpdaterConfig(){
+	if(!dir.exists()){
+	    dir.mkdirs();
+	}
+	
 	InputStream stream = UpdaterConfig.class.getResourceAsStream("/config.xml");
 
 	DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
@@ -59,21 +65,22 @@ public class UpdaterConfig {
 	Element el = (Element) node;
 
 	itm.link = el.getAttribute(LINK);
-	itm.file = el.getAttribute(FILE);
+	itm.file = new File(dir, el.getAttribute(FILE));
 	itm.os = el.getAttribute(OS);
 	itm.arch = el.getAttribute(ARCH);
-	itm.extract = el.getAttribute(EXTRACT);
+	String e = el.getAttribute(EXTRACT);
+	if(e.length() > 0){itm.extract = new File(dir, e);}
 	return itm;
     }
 
     public static class Item{
 	public String arch;
 	public String os;
-	public String file;
+	public File file;
 	public String link;
 	public long date = 0;
 	public long size = 0;
-	public String extract = null;
+	public File extract = null;
 
     }
 }
