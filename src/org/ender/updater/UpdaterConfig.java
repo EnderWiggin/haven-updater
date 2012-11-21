@@ -1,9 +1,5 @@
 package org.ender.updater;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
@@ -29,14 +25,15 @@ public class UpdaterConfig {
 
     List<Item> items = new ArrayList<UpdaterConfig.Item>();
 
-    public UpdaterConfig(File file){
-	check_config(file);
+    public UpdaterConfig(){
+	InputStream stream = UpdaterConfig.class.getResourceAsStream("/config.xml");
 
 	DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
 	DocumentBuilder builder;
 	try {
 	    builder = factory.newDocumentBuilder();
-	    Document doc = builder.parse(file);
+	    Document doc = builder.parse(stream);
+	    stream.close();
 	    
 	    NamedNodeMap attrs = doc.getDocumentElement().getAttributes();
 	    mem = attrs.getNamedItem("mem").getNodeValue();
@@ -52,28 +49,6 @@ public class UpdaterConfig {
 	    }
 	} catch (Exception e) {
 	    e.printStackTrace();
-	}
-    }
-
-    private void check_config(File file) {
-	if(!file.exists()){
-	    try {
-		FileOutputStream out = new FileOutputStream(file);
-		InputStream in = UpdaterConfig.class.getResourceAsStream("/config.xml");
-
-		int k = 512;
-		byte[] b = new byte[512];
-		while(k>0){
-		    k = in.read(b, 0, 512);
-		    if(k>0){
-			out.write(b, 0, k);
-		    }
-		}
-		out.close();
-		in.close();
-	    } catch (FileNotFoundException e) {
-	    } catch (IOException e) {
-	    }
 	}
     }
 

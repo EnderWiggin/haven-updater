@@ -21,7 +21,7 @@ public class Updater {
     private IUpdaterListener listener;
     public Updater(IUpdaterListener listener){
 	this.listener = listener;
-	cfg = new UpdaterConfig(new File("config.xml"));
+	cfg = new UpdaterConfig();
     }
 
     public void update() {
