@@ -22,6 +22,7 @@ public class Main extends JFrame implements IUpdaterListener{
 	Main gui = new Main();
 	gui.setVisible(true);
 	gui.setSize(350, 450);
+	gui.log(String.format("OS: '%s', arch: '%s'", System.getProperty("os.name"), System.getProperty("os.arch")));
 	gui.log("Checking for updates...");
 
 	updater = new Updater(gui);
@@ -64,7 +65,7 @@ public class Main extends JFrame implements IUpdaterListener{
 	} catch (IOException e) {
 	    e.printStackTrace();
 	}
-	System.exit(0);
+	//System.exit(0);
     }
 
     @Override

@@ -25,7 +25,7 @@ public class Updater {
     }
 
     public void update() {
-	(new Thread(new Runnable() {
+	Thread t = new Thread(new Runnable() {
 
 	    @Override
 	    public void run() {
@@ -49,7 +49,9 @@ public class Updater {
 		
 		listener.fisnished();
 	    }
-	})).start();
+	});
+	t.setDaemon(true);
+	t.start();
     }
 
     private boolean correct_platform(Item item) {
