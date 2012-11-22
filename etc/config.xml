@@ -45,8 +45,8 @@
 	<item file="jogl_lib.jar" link="http://www.havenandhearth.com/java/jogl/jogl-natives-macosx-i586.jar" os="Mac OS X" arch="ppc" extract="."/>
 	<item file="gluegen_lib.jar" link="http://www.havenandhearth.com/java/jogl/gluegen-rt-natives-macosx-i586.jar" os="Mac OS X" arch="ppc" extract="."/>
 	
-	<item file="jogl_lib.jar" link="http://www.havenandhearth.com/java/jogl/jogl-natives-macosx-amd64.jar" os="Mac OS X" arch="x86_64" extract="."/>
-	<item file="gluegen_lib.jar" link="http://www.havenandhearth.com/java/jogl/gluegen-rt-natives-macosx-amd64.jar" os="Mac OS X" arch="x86_64" extract="."/>
+	<item file="jogl_lib.jar" link="http://www.havenandhearth.com/java/jogl/jogl-natives-macosx-universal.jar" os="Mac OS X" arch="x86_64" extract="."/>
+	<item file="gluegen_lib.jar" link="http://www.havenandhearth.com/java/jogl/gluegen-rt-natives-macosx-universal.jar" os="Mac OS X" arch="x86_64" extract="."/>
 	
 	<item file="jogl.jar" link="http://www.havenandhearth.com/java/jogl/jogl.jar"/>
 	<item file="gluegen-rt.jar" link="http://www.havenandhearth.com/java/jogl/gluegen-rt.jar"/>
