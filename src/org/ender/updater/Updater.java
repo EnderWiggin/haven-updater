@@ -34,10 +34,10 @@ public class Updater {
 		    if(!correct_platform(item)){continue;}
 		    set_date(item);
 		    if(has_update(item)){
-			listener.log(String.format("Updates found for '%s'", item.file));
+			listener.log(String.format("Updates found for '%s'", item.file.getName()));
 			update.add(item);
 		    } else {
-			listener.log(String.format("No updates for '%s'", item.file));
+			listener.log(String.format("No updates for '%s'", item.file.getName()));
 		    }
 		}
 		for (Item item: update){
@@ -88,7 +88,7 @@ public class Updater {
     }
 
     private void download(Item item) {
-	listener.log(String.format("Downloading '%s'", item.file));
+	listener.log(String.format("Downloading '%s'", item.file.getName()));
 	URL link;
 	try {
 	    link = new URL(item.link);
@@ -111,7 +111,7 @@ public class Updater {
     }
 
     private void extract(Item item) {
-	listener.log(String.format("Unpacking '%s'", item.file));
+	listener.log(String.format("Unpacking '%s'", item.file.getName()));
 	try {
 	    ZipFile zip;
 	    zip = new ZipFile(item.file);
