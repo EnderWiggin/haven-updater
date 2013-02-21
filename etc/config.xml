@@ -1,10 +1,10 @@
 <config jar="salem.jar" mem="768m" server="plymouth.seatribe.se" res="http://plymouth.seatribe.se/res/">
 	<!-- WINDOWS -->
-	<item file="jogl_lib.jar" link="http://plymouth.seatribe.se/java/jogl2/jar/jogl-all-natives-windows-i586.jar" os="Windows" arch="x86" extract="."/>
-	<item file="gluegen_lib.jar" link="http://plymouth.seatribe.se/java/jogl2/jar/gluegen-rt-natives-windows-i586.jar" os="Windows" arch="x86" extract="."/>
+	<item file="jogl-natives-windows-i586.jar" link="http://plymouth.seatribe.se/java/jogl2/jar/jogl-all-natives-windows-i586.jar" os="Windows" arch="x86" />
+	<item file="gluegen-rt-natives-windows-i586.jar" link="http://plymouth.seatribe.se/java/jogl2/jar/gluegen-rt-natives-windows-i586.jar" os="Windows" arch="x86" />
 	
-	<item file="jogl_lib.jar" link="http://plymouth.seatribe.se/java/jogl2/jar/jogl-all-natives-windows-amd64.jar" os="Windows" arch="amd64" extract="."/>
-	<item file="gluegen_lib.jar" link="http://plymouth.seatribe.se/java/jogl2/jar/gluegen-rt-natives-windows-amd64.jar" os="Windows" arch="amd64" extract="."/>
+	<item file="jogl-natives-windows-amd64.jar" link="http://plymouth.seatribe.se/java/jogl2/jar/jogl-all-natives-windows-amd64.jar" os="Windows" arch="amd64" />
+	<item file="gluegen-rt-natives-windows-amd64.jar" link="http://plymouth.seatribe.se/java/jogl2/jar/gluegen-rt-natives-windows-amd64.jar" os="Windows" arch="amd64" />
 	
 	<item file="jogl_lib.jar" link="http://plymouth.seatribe.se/java/jogl2/jar/jogl-all-natives-windows-amd64.jar" os="Windows" arch="x86_64" extract="."/>
 	<item file="gluegen_lib.jar" link="http://plymouth.seatribe.se/java/jogl2/jar/gluegen-rt-natives-windows-amd64.jar" os="Windows" arch="x86_64" extract="."/>
