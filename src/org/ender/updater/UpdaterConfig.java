@@ -65,7 +65,12 @@ public class UpdaterConfig {
 	Element el = (Element) node;
 
 	itm.link = el.getAttribute(LINK);
-	itm.file = new File(dir, el.getAttribute(FILE));
+	if(el.hasAttribute(FILE)){
+	    itm.file = new File(dir, el.getAttribute(FILE));
+	} else {
+	    int i = itm.link.lastIndexOf("/");
+	    itm.file = new File(dir, itm.link.substring(i+1));
+	}
 	itm.os = el.getAttribute(OS);
 	itm.arch = el.getAttribute(ARCH);
 	String e = el.getAttribute(EXTRACT);
