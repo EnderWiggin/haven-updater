@@ -11,5 +11,14 @@
             <fileset dir="bin"/>
         	<fileset file="etc/config.xml"/>
         </jar>
+    	<signjar destDir="jar"
+    	    alias="mykey" keystore="keys/SalemKey"
+    	    storepass="123456"
+    	    preservelastmodified="true">
+    	  <path>
+    	    <fileset dir="jar" includes="**/*.jar" />
+    	  </path>
+    	  <flattenmapper />
+    	</signjar>
     </target>
 </project>
