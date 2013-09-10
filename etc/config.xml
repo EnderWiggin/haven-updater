@@ -1,57 +1,61 @@
-<config jar="salem.jar" mem="768m" server="plymouth.seatribe.se" res="http://plymouth.seatribe.se/res/">
+<config jar="haven.jar" mem="768m" res="http://www.havenandhearth.com/res/" server="moltke.seatribe.se">
 	<!-- WINDOWS -->
-	<item link="http://plymouth.seatribe.se/java/jogl2/jar/jogl-all-natives-windows-i586.jar" os="Windows" arch="x86" />
-	<item link="http://plymouth.seatribe.se/java/jogl2/jar/gluegen-rt-natives-windows-i586.jar" os="Windows" arch="x86" />
+	<item link="http://www.havenandhearth.com/java/jogl/jogl-natives-windows-i586.jar" os="Windows" arch="x86" extract="."/>
+	<item link="http://www.havenandhearth.com/java/jogl/gluegen-rt-natives-windows-i586.jar" os="Windows" arch="x86" extract="."/>
 	
-	<item link="http://plymouth.seatribe.se/java/jogl2/jar/jogl-all-natives-windows-amd64.jar" os="Windows" arch="amd64" />
-	<item link="http://plymouth.seatribe.se/java/jogl2/jar/gluegen-rt-natives-windows-amd64.jar" os="Windows" arch="amd64" />
+	<item link="http://www.havenandhearth.com/java/jogl/jogl-natives-windows-amd64.jar" os="Windows" arch="amd64" />
+	<item link="http://www.havenandhearth.com/java/jogl/gluegen-rt-natives-windows-amd64.jar" os="Windows" arch="amd64" />
 	
-	<item link="http://plymouth.seatribe.se/java/jogl2/jar/jogl-all-natives-windows-amd64.jar" os="Windows" arch="x86_64" extract="."/>
-	<item link="http://plymouth.seatribe.se/java/jogl2/jar/gluegen-rt-natives-windows-amd64.jar" os="Windows" arch="x86_64" extract="."/>
+	<item link="http://www.havenandhearth.com/java/jogl/jogl-natives-windows-amd64.jar" os="Windows" arch="x86_64" extract="."/>
+	<item link="http://www.havenandhearth.com/java/jogl/gluegen-rt-natives-windows-amd64.jar" os="Windows" arch="x86_64" extract="."/>
 	
 	<!-- SOLARIS -->
-	<item link="http://plymouth.seatribe.se/java/jogl2/jar/jogl-all-natives-solaris-sparc.jar" os="SunOS" arch="sparc" extract="."/>
-	<item link="http://plymouth.seatribe.se/java/jogl2/jar/gluegen-rt-natives-solaris-sparc.jar" os="SunOS" arch="sparc" extract="."/>
+	<item link="http://www.havenandhearth.com/java/jogl/jogl-natives-solaris-sparc.jar" os="SunOS" arch="sparc" extract="."/>
+	<item link="http://www.havenandhearth.com/java/jogl/gluegen-rt-natives-solaris-sparc.jar" os="SunOS" arch="sparc" extract="."/>
 	
-	<item link="http://plymouth.seatribe.se/java/jogl2/jar/jogl-all-natives-solaris-sparcv9.jar" os="SunOS" arch="sparcv9" extract="."/>
-	<item link="http://plymouth.seatribe.se/java/jogl2/jar/gluegen-rt-natives-solaris-sparcv9.jar" os="SunOS" arch="sparcv9" extract="."/>
+	<item link="http://www.havenandhearth.com/java/jogl/jogl-natives-solaris-sparcv9.jar" os="SunOS" arch="sparcv9" extract="."/>
+	<item link="http://www.havenandhearth.com/java/jogl/gluegen-rt-natives-solaris-sparcv9.jar" os="SunOS" arch="sparcv9" extract="."/>
 	
-	<item link="http://plymouth.seatribe.se/java/jogl2/jar/jogl-all-natives-solaris-i586.jar" os="SunOS" arch="x86" extract="."/>
-	<item link="http://plymouth.seatribe.se/java/jogl2/jar/gluegen-rt-natives-solaris-i586.jar" os="SunOS" arch="x86" extract="."/>
+	<item link="http://www.havenandhearth.com/java/jogl/jogl-natives-solaris-i586.jar" os="SunOS" arch="x86" extract="."/>
+	<item link="http://www.havenandhearth.com/java/jogl/gluegen-rt-natives-solaris-i586.jar" os="SunOS" arch="x86" extract="."/>
 	
-	<item link="http://plymouth.seatribe.se/java/jogl2/jar/jogl-all-natives-solaris-amd64.jar" os="SunOS" arch="amd64" extract="."/>
-	<item link="http://plymouth.seatribe.se/java/jogl2/jar/gluegen-rt-natives-solaris-amd64.jar" os="SunOS" arch="amd64" extract="."/>
+	<item link="http://www.havenandhearth.com/java/jogl/jogl-natives-solaris-amd64.jar" os="SunOS" arch="amd64" extract="."/>
+	<item link="http://www.havenandhearth.com/java/jogl/gluegen-rt-natives-solaris-amd64.jar" os="SunOS" arch="amd64" extract="."/>
 	
-	<item link="http://plymouth.seatribe.se/java/jogl2/jar/jogl-all-natives-solaris-amd64.jar" os="SunOS" arch="x86_64" extract="."/>
-	<item link="http://plymouth.seatribe.se/java/jogl2/jar/gluegen-rt-natives-solaris-amd64.jar" os="SunOS" arch="x86_64" extract="."/>
+	<item link="http://www.havenandhearth.com/java/jogl/jogl-natives-solaris-amd64.jar" os="SunOS" arch="x86_64" extract="."/>
+	<item link="http://www.havenandhearth.com/java/jogl/gluegen-rt-natives-solaris-amd64.jar" os="SunOS" arch="x86_64" extract="."/>
 	
 	<!-- LINUX -->
-	<item link="http://plymouth.seatribe.se/java/jogl2/jar/jogl-all-natives-linux-i586.jar" os="Linux" arch="i386" extract="."/>
-	<item link="http://plymouth.seatribe.se/java/jogl2/jar/gluegen-rt-natives-linux-i586.jar" os="Linux" arch="i386" extract="."/>
+	<item link="http://www.havenandhearth.com/java/jogl/jogl-natives-linux-i586.jar" os="Linux" arch="i386" extract="."/>
+	<item link="http://www.havenandhearth.com/java/jogl/gluegen-rt-natives-linux-i586.jar" os="Linux" arch="i386" extract="."/>
 	
-	<item link="http://plymouth.seatribe.se/java/jogl2/jar/jogl-all-natives-linux-i586.jar" os="Linux" arch="x86" extract="."/>
-	<item link="http://plymouth.seatribe.se/java/jogl2/jar/gluegen-rt-natives-linux-i586.jar" os="Linux" arch="x86" extract="."/>
+	<item link="http://www.havenandhearth.com/java/jogl/jogl-natives-linux-i586.jar" os="Linux" arch="x86" extract="."/>
+	<item link="http://www.havenandhearth.com/java/jogl/gluegen-rt-natives-linux-i586.jar" os="Linux" arch="x86" extract="."/>
 	
-	<item link="http://plymouth.seatribe.se/java/jogl2/jar/jogl-all-natives-linux-amd64.jar" os="Linux" arch="amd64" extract="."/>
-	<item link="http://plymouth.seatribe.se/java/jogl2/jar/gluegen-rt-natives-linux-amd64.jar" os="Linux" arch="amd64" extract="."/>
+	<item link="http://www.havenandhearth.com/java/jogl/jogl-natives-linux-amd64.jar" os="Linux" arch="amd64" extract="."/>
+	<item link="http://www.havenandhearth.com/java/jogl/gluegen-rt-natives-linux-amd64.jar" os="Linux" arch="amd64" extract="."/>
 	
-	<item link="http://plymouth.seatribe.se/java/jogl2/jar/jogl-all-natives-linux-amd64.jar" os="Linux" arch="x86_64" extract="."/>
-	<item link="http://plymouth.seatribe.se/java/jogl2/jar/gluegen-rt-natives-linux-amd64.jar" os="Linux" arch="x86_64" extract="."/>
+	<item link="http://www.havenandhearth.com/java/jogl/jogl-natives-linux-amd64.jar" os="Linux" arch="x86_64" extract="."/>
+	<item link="http://www.havenandhearth.com/java/jogl/gluegen-rt-natives-linux-amd64.jar" os="Linux" arch="x86_64" extract="."/>
 	
 	<!-- MAC OS X -->
-	<item link="http://plymouth.seatribe.se/java/jogl2/jar/jogl-all-natives-macosx-universal.jar" os="Mac OS X" arch="i386" extract="."/>
-	<item link="http://plymouth.seatribe.se/java/jogl2/jar/gluegen-rt-natives-macosx-universal.jar" os="Mac OS X" arch="i386" extract="."/>
+	<item link="http://www.havenandhearth.com/java/jogl/jogl-natives-macosx-universal.jar" os="Mac OS X" arch="i386" extract="."/>
+	<item link="http://www.havenandhearth.com/java/jogl/gluegen-rt-natives-macosx-universal.jar" os="Mac OS X" arch="i386" extract="."/>
 	
-	<item link="http://plymouth.seatribe.se/java/jogl2/jar/jogl-all-natives-macosx-i586.jar" os="Mac OS X" arch="ppc" extract="."/>
-	<item link="http://plymouth.seatribe.se/java/jogl2/jar/gluegen-rt-natives-macosx-i586.jar" os="Mac OS X" arch="ppc" extract="."/>
+	<item link="http://www.havenandhearth.com/java/jogl/jogl-natives-macosx-i586.jar" os="Mac OS X" arch="ppc" extract="."/>
+	<item link="http://www.havenandhearth.com/java/jogl/gluegen-rt-natives-macosx-i586.jar" os="Mac OS X" arch="ppc" extract="."/>
 	
-	<item link="http://plymouth.seatribe.se/java/jogl2/jar/jogl-all-natives-macosx-universal.jar" os="Mac OS X" arch="x86_64" extract="."/>
-	<item link="http://plymouth.seatribe.se/java/jogl2/jar/gluegen-rt-natives-macosx-universal.jar" os="Mac OS X" arch="x86_64" extract="."/>
+	<item link="http://www.havenandhearth.com/java/jogl/jogl-natives-macosx-universal.jar" os="Mac OS X" arch="x86_64" extract="."/>
+	<item link="http://www.havenandhearth.com/java/jogl/gluegen-rt-natives-macosx-universal.jar" os="Mac OS X" arch="x86_64" extract="."/>
 	
-	<item link="http://plymouth.seatribe.se/java/jogl2/jar/jogl-all.jar"/>
-	<item link="http://plymouth.seatribe.se/java/jogl2/jar/gluegen-rt.jar"/>
-	<item link="http://plymouth.seatribe.se/java/salem-res.jar" />
-	<item link="http://plymouth.seatribe.se/java/builtin-res.jar" />
-	<item link="http://odditown.taggedup.com/ender/salem/salem.jar" />
-	<item link="http://odditown.taggedup.com/ender/salem/client-res.jar" />
+	<item link="http://www.havenandhearth.com/java/jogl/jogl.jar"/>
+	<item link="http://www.havenandhearth.com/java/jogl/gluegen-rt.jar"/>
+	<item link="http://www.havenandhearth.com/java/haven-res.jar" />
+	<item link="https://raw.github.com/EnderWiggin/Haven-and-Hearth-client-modified-by-Ender/master/craft.conf" />
+	<item link="https://raw.github.com/EnderWiggin/Haven-and-Hearth-client-modified-by-Ender/master/curio.conf" />
+	<item link="https://raw.github.com/EnderWiggin/Haven-and-Hearth-client-modified-by-Ender/master/fep.conf" />
+	<item link="https://raw.github.com/EnderWiggin/Haven-and-Hearth-client-modified-by-Ender/master/highlight.conf" />
+	<item link="https://raw.github.com/EnderWiggin/Haven-and-Hearth-client-modified-by-Ender/master/smileys.conf" />
+	<item link="http://odditown.taggedup.com/ender/HnH/haven.jar" />
+	<item link="http://odditown.taggedup.com/ender/HnH/client-res.jar" />
 </config>

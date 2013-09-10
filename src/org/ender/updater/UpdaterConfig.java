@@ -23,7 +23,7 @@ public class UpdaterConfig {
     private static final String LINK = "link";
     
     public String mem, res, server, jar;
-    public static File dir = new File(System.getProperty("user.home"), "/Salem/bin");
+    public static File dir = new File(".");
 
     List<Item> items = new ArrayList<UpdaterConfig.Item>();
 
@@ -42,10 +42,17 @@ public class UpdaterConfig {
 	    stream.close();
 	    
 	    NamedNodeMap attrs = doc.getDocumentElement().getAttributes();
-	    mem = attrs.getNamedItem("mem").getNodeValue();
-	    res = attrs.getNamedItem("res").getNodeValue();
-	    server = attrs.getNamedItem("server").getNodeValue();
-	    jar = attrs.getNamedItem("jar").getNodeValue();
+	    Node node = attrs.getNamedItem("mem");
+	    mem = (node != null)?node.getNodeValue():"";
+	    
+	    node = attrs.getNamedItem("res");
+	    res = (node != null)?node.getNodeValue():"";
+	    
+	    node = attrs.getNamedItem("server");
+	    server = (node != null)?node.getNodeValue():"";
+	    
+	    node = attrs.getNamedItem("jar");
+	    jar = (node != null)?node.getNodeValue():"";
 
 	    NodeList groupNodes = doc.getElementsByTagName(ITEM);
 	    for (int i = 0; i < groupNodes.getLength(); i++) {

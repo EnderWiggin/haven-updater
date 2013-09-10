@@ -75,10 +75,10 @@ public class Main extends JFrame implements IUpdaterListener{
     @Override
     public void fisnished() {
 	log("Starting client...");
-	String libs = String.format("-Djava.library.path=%%PATH%%%s.", File.pathSeparator);
+	String libs = String.format("-Djava.library.path=\"%%PATH%%\"%s.", File.pathSeparator);
 	UpdaterConfig cfg = updater.cfg;
 	ProcessBuilder pb = new ProcessBuilder("java", "-Xmx"+cfg.mem, libs, "-jar", cfg.jar, "-U", cfg.res, cfg.server);
-	pb.directory(UpdaterConfig.dir);
+	pb.directory(UpdaterConfig.dir.getAbsoluteFile());
 	try {
 	    pb.start();
 	} catch (IOException e) {

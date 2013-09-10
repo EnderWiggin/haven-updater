@@ -16,7 +16,7 @@
     	    storepass="123456"
     	    preservelastmodified="true">
     	  <path>
-    	    <fileset dir="jar" includes="**/*.jar" />
+    	    <fileset dir="jar" includes="**/updater.jar" />
     	  </path>
     	  <flattenmapper />
     	</signjar>
