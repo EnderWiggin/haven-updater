@@ -56,6 +56,7 @@
 	<item link="https://raw.github.com/EnderWiggin/Haven-and-Hearth-client-modified-by-Ender/master/fep.conf" />
 	<item link="https://raw.github.com/EnderWiggin/Haven-and-Hearth-client-modified-by-Ender/master/highlight.conf" />
 	<item link="https://raw.github.com/EnderWiggin/Haven-and-Hearth-client-modified-by-Ender/master/smileys.conf" />
-	<item link="http://odditown.taggedup.com/ender/HnH/haven.jar" />
-	<item link="http://odditown.taggedup.com/ender/HnH/client-res.jar" />
+	<item link="http://enderwiggin.github.io/HnH/changelog.txt" />
+	<item link="http://enderwiggin.github.io/HnH/haven.jar" />
+	<item link="http://enderwiggin.github.io/HnH/client-res.jar" />
 </config>

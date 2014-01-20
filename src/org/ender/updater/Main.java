@@ -37,7 +37,7 @@ public class Main extends JFrame implements IUpdaterListener{
     private JProgressBar progress;
 
     public Main(){
-	super("Salem updater");
+	super("HnH updater");
 	try {
 	    if(!dir.exists()){
 		dir.mkdirs();
