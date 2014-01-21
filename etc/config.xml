@@ -3,8 +3,8 @@
 	<item link="http://www.havenandhearth.com/java/jogl/jogl-natives-windows-i586.jar" os="Windows" arch="x86" extract="."/>
 	<item link="http://www.havenandhearth.com/java/jogl/gluegen-rt-natives-windows-i586.jar" os="Windows" arch="x86" extract="."/>
 	
-	<item link="http://www.havenandhearth.com/java/jogl/jogl-natives-windows-amd64.jar" os="Windows" arch="amd64" />
-	<item link="http://www.havenandhearth.com/java/jogl/gluegen-rt-natives-windows-amd64.jar" os="Windows" arch="amd64" />
+	<item link="http://www.havenandhearth.com/java/jogl/jogl-natives-windows-amd64.jar" os="Windows" arch="amd64" extract="."/>
+	<item link="http://www.havenandhearth.com/java/jogl/gluegen-rt-natives-windows-amd64.jar" os="Windows" arch="amd64" extract="."/>
 	
 	<item link="http://www.havenandhearth.com/java/jogl/jogl-natives-windows-amd64.jar" os="Windows" arch="x86_64" extract="."/>
 	<item link="http://www.havenandhearth.com/java/jogl/gluegen-rt-natives-windows-amd64.jar" os="Windows" arch="x86_64" extract="."/>
