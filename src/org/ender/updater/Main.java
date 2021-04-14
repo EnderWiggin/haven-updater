@@ -76,8 +76,9 @@ public class Main extends JFrame implements IUpdaterListener{
     public void fisnished() {
 	log("Starting client...");
 	String libs = String.format("-Djava.library.path=\"%%PATH%%\"%s.", File.pathSeparator);
+	String uiScale = "-Dsun.java2d.uiScale.enabled=false";
 	UpdaterConfig cfg = updater.cfg;
-	ProcessBuilder pb = new ProcessBuilder("java", "-Xmx"+cfg.mem, libs, "-jar", cfg.jar, "-U", cfg.res, cfg.server);
+	ProcessBuilder pb = new ProcessBuilder("java", "-Xmx"+cfg.mem, uiScale, libs, "-jar", cfg.jar, "-U", cfg.res, cfg.server);
 	pb.directory(UpdaterConfig.dir.getAbsoluteFile());
 	try {
 	    pb.start();
