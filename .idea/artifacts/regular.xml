@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="regular">
+    <output-path>$PROJECT_DIR$/artifacts</output-path>
+    <root id="archive" name="updater-hafen.jar">
+      <element id="module-output" name="Updater" />
+      <element id="file-copy" path="$PROJECT_DIR$/etc/config.xml" />
+    </root>
+  </artifact>
+</component>
