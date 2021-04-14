@@ -63,6 +63,7 @@ public class Main extends JFrame implements IUpdaterListener{
 
     @Override
     public void log(String message) {
+	System.out.println(message);
 	message = message.concat("\n");
 	logbox.append(message);
 	try {
@@ -79,7 +80,8 @@ public class Main extends JFrame implements IUpdaterListener{
 	String uiScale = "-Dsun.java2d.uiScale.enabled=false";
 	UpdaterConfig cfg = updater.cfg;
 	ProcessBuilder pb = new ProcessBuilder("java", "-Xmx"+cfg.mem, uiScale, libs, "-jar", cfg.jar, "-U", cfg.res, cfg.server);
-	pb.directory(UpdaterConfig.dir.getAbsoluteFile());
+	pb.directory(new File(".").getAbsoluteFile());
+	log(String.join(" ", pb.command()));
 	try {
 	    pb.start();
 	} catch (IOException e) {

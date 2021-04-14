@@ -1,4 +1,4 @@
-<config jar="hafen.jar" mem="2048m" res="http://www.havenandhearth.com/res/" server="game.havenandhearth.com">
+<config jar="client/hafen.jar" mem="2048m" res="http://www.havenandhearth.com/res/" server="game.havenandhearth.com" dir="./client">
 	<!-- WINDOWS -->
 	<item link="http://www.havenandhearth.com/java/jogl/current/jar/jogl-all-natives-windows-i586.jar" file="jogl-natives-windows-i586.jar" os="Windows" arch="x86" />
 	<item link="http://www.havenandhearth.com/java/jogl/current/jar/gluegen-rt-natives-windows-i586.jar" os="Windows" arch="x86" />

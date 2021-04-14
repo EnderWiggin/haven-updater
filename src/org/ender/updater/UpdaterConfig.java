@@ -28,10 +28,6 @@ public class UpdaterConfig {
     List<Item> items = new ArrayList<UpdaterConfig.Item>();
 
     public UpdaterConfig(){
-	if(!dir.exists()){
-	    dir.mkdirs();
-	}
-	
 	InputStream stream = UpdaterConfig.class.getResourceAsStream("/config.xml");
 
 	DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
@@ -53,6 +49,12 @@ public class UpdaterConfig {
 	    
 	    node = attrs.getNamedItem("jar");
 	    jar = (node != null)?node.getNodeValue():"";
+
+	    node = attrs.getNamedItem("dir");
+	    dir = new File(node != null ? node.getNodeValue() : ".");
+	    if(!dir.exists()){
+		dir.mkdirs();
+	    }
 
 	    NodeList groupNodes = doc.getElementsByTagName(ITEM);
 	    for (int i = 0; i < groupNodes.getLength(); i++) {

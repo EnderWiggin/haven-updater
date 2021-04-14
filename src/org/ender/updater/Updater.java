@@ -93,6 +93,7 @@ public class Updater {
 	try {
 	    link = new URL(item.link);
 	    ReadableByteChannel rbc = Channels.newChannel(link.openStream());
+	    item.file.getParentFile().mkdirs();
 	    FileOutputStream fos = new FileOutputStream(item.file);
 	    long position = 0;
 	    int step = 20480;
