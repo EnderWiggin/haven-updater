@@ -1,54 +1,54 @@
 <config jar="client-beta/hafen.jar" mem="2048m" res="https://www.havenandhearth.com/res/" server="game.havenandhearth.com" dir="./client-beta">
 	<!-- WINDOWS -->
-	<item link="http://www.havenandhearth.com/java/jogl/current/jar/jogl-all-natives-windows-i586.jar" file="jogl-natives-windows-i586.jar" os="Windows" arch="x86" />
+	<item link="http://www.havenandhearth.com/java/jogl/current/jar/jogl-all-natives-windows-i586.jar" file="jogl-all-natives-windows-i586.jar" os="Windows" arch="x86" />
 	<item link="http://www.havenandhearth.com/java/jogl/current/jar/gluegen-rt-natives-windows-i586.jar" os="Windows" arch="x86" />
 
-	<item link="http://www.havenandhearth.com/java/jogl/current/jar/jogl-all-natives-windows-amd64.jar" file="jogl-natives-windows-amd64.jar" os="Windows" arch="amd64" />
+	<item link="http://www.havenandhearth.com/java/jogl/current/jar/jogl-all-natives-windows-amd64.jar" file="jogl-all-natives-windows-amd64.jar" os="Windows" arch="amd64" />
 	<item link="http://www.havenandhearth.com/java/jogl/current/jar/gluegen-rt-natives-windows-amd64.jar" os="Windows" arch="amd64" />
 
-	<item link="http://www.havenandhearth.com/java/jogl/current/jar/jogl-all-natives-windows-amd64.jar" file="jogl-natives-windows-amd64.jar" os="Windows" arch="x86_64" />
+	<item link="http://www.havenandhearth.com/java/jogl/current/jar/jogl-all-natives-windows-amd64.jar" file="jogl-all-natives-windows-amd64.jar" os="Windows" arch="x86_64" />
 	<item link="http://www.havenandhearth.com/java/jogl/current/jar/gluegen-rt-natives-windows-amd64.jar" os="Windows" arch="x86_64" />
 
 	<!-- SOLARIS -->
-	<item link="http://www.havenandhearth.com/java/jogl/current/jar/jogl-all-natives-solaris-sparc.jar" file="jogl-natives-solaris-sparc.jar" os="SunOS" arch="sparc" />
+	<item link="http://www.havenandhearth.com/java/jogl/current/jar/jogl-all-natives-solaris-sparc.jar" file="jogl-all-natives-solaris-sparc.jar" os="SunOS" arch="sparc" />
 	<item link="http://www.havenandhearth.com/java/jogl/current/jar/gluegen-rt-natives-solaris-sparc.jar" os="SunOS" arch="sparc" />
 
-	<item link="http://www.havenandhearth.com/java/jogl/current/jar/jogl-all-natives-solaris-sparcv9.jar" file="jogl-natives-solaris-sparcv9.jar" os="SunOS" arch="sparcv9" />
+	<item link="http://www.havenandhearth.com/java/jogl/current/jar/jogl-all-natives-solaris-sparcv9.jar" file="jogl-all-natives-solaris-sparcv9.jar" os="SunOS" arch="sparcv9" />
 	<item link="http://www.havenandhearth.com/java/jogl/current/jar/gluegen-rt-natives-solaris-sparcv9.jar" os="SunOS" arch="sparcv9" />
 
-	<item link="http://www.havenandhearth.com/java/jogl/current/jar/jogl-all-natives-solaris-i586.jar" file="jogl-natives-solaris-i586.jar" os="SunOS" arch="x86" />
+	<item link="http://www.havenandhearth.com/java/jogl/current/jar/jogl-all-natives-solaris-i586.jar" file="jogl-all-natives-solaris-i586.jar" os="SunOS" arch="x86" />
 	<item link="http://www.havenandhearth.com/java/jogl/current/jar/gluegen-rt-natives-solaris-i586.jar" os="SunOS" arch="x86" />
 
-	<item link="http://www.havenandhearth.com/java/jogl/current/jar/jogl-all-natives-solaris-amd64.jar" file="jogl-natives-solaris-amd64.jar" os="SunOS" arch="amd64" />
+	<item link="http://www.havenandhearth.com/java/jogl/current/jar/jogl-all-natives-solaris-amd64.jar" file="jogl-all-natives-solaris-amd64.jar" os="SunOS" arch="amd64" />
 	<item link="http://www.havenandhearth.com/java/jogl/current/jar/gluegen-rt-natives-solaris-amd64.jar" os="SunOS" arch="amd64" />
 
-	<item link="http://www.havenandhearth.com/java/jogl/current/jar/jogl-all-natives-solaris-amd64.jar" file="jogl-natives-solaris-amd64.jar" os="SunOS" arch="x86_64" />
+	<item link="http://www.havenandhearth.com/java/jogl/current/jar/jogl-all-natives-solaris-amd64.jar" file="jogl-all-natives-solaris-amd64.jar" os="SunOS" arch="x86_64" />
 	<item link="http://www.havenandhearth.com/java/jogl/current/jar/gluegen-rt-natives-solaris-amd64.jar" os="SunOS" arch="x86_64" />
 
 	<!-- LINUX -->
-	<item link="http://www.havenandhearth.com/java/jogl/current/jar/jogl-all-natives-linux-i586.jar" file="jogl-natives-linux-i586.jar" os="Linux" arch="i386" />
+	<item link="http://www.havenandhearth.com/java/jogl/current/jar/jogl-all-natives-linux-i586.jar" file="jogl-all-natives-linux-i586.jar" os="Linux" arch="i386" />
 	<item link="http://www.havenandhearth.com/java/jogl/current/jar/gluegen-rt-natives-linux-i586.jar" os="Linux" arch="i386" />
 
-	<item link="http://www.havenandhearth.com/java/jogl/current/jar/jogl-all-natives-linux-i586.jar" file="jogl-natives-linux-i586.jar" os="Linux" arch="x86" />
+	<item link="http://www.havenandhearth.com/java/jogl/current/jar/jogl-all-natives-linux-i586.jar" file="jogl-all-natives-linux-i586.jar" os="Linux" arch="x86" />
 	<item link="http://www.havenandhearth.com/java/jogl/current/jar/gluegen-rt-natives-linux-i586.jar" os="Linux" arch="x86" />
 
-	<item link="http://www.havenandhearth.com/java/jogl/current/jar/jogl-all-natives-linux-amd64.jar" file="jogl-natives-linux-amd64.jar" os="Linux" arch="amd64" />
+	<item link="http://www.havenandhearth.com/java/jogl/current/jar/jogl-all-natives-linux-amd64.jar" file="jogl-all-natives-linux-amd64.jar" os="Linux" arch="amd64" />
 	<item link="http://www.havenandhearth.com/java/jogl/current/jar/gluegen-rt-natives-linux-amd64.jar" os="Linux" arch="amd64" />
 
-	<item link="http://www.havenandhearth.com/java/jogl/current/jar/jogl-all-natives-linux-amd64.jar" file="jogl-natives-linux-amd64.jar" os="Linux" arch="x86_64" />
+	<item link="http://www.havenandhearth.com/java/jogl/current/jar/jogl-all-natives-linux-amd64.jar" file="jogl-all-natives-linux-amd64.jar" os="Linux" arch="x86_64" />
 	<item link="http://www.havenandhearth.com/java/jogl/current/jar/gluegen-rt-natives-linux-amd64.jar" os="Linux" arch="x86_64" />
 
 	<!-- MAC OS X -->
-	<item link="http://www.havenandhearth.com/java/jogl/current/jar/jogl-all-natives-macosx-universal.jar" file="jogl-natives-macosx-universal.jar" os="Mac OS X" arch="i386" />
+	<item link="http://www.havenandhearth.com/java/jogl/current/jar/jogl-all-natives-macosx-universal.jar" file="jogl-all-natives-macosx-universal.jar" os="Mac OS X" arch="i386" />
 	<item link="http://www.havenandhearth.com/java/jogl/current/jar/gluegen-rt-natives-macosx-universal.jar" os="Mac OS X" arch="i386" />
 
-	<item link="http://www.havenandhearth.com/java/jogl/current/jar/jogl-all-natives-macosx-i586.jar" file="jogl-natives-macosx-i586.jar" os="Mac OS X" arch="ppc" />
+	<item link="http://www.havenandhearth.com/java/jogl/current/jar/jogl-all-natives-macosx-i586.jar" file="jogl-all-natives-macosx-i586.jar" os="Mac OS X" arch="ppc" />
 	<item link="http://www.havenandhearth.com/java/jogl/current/jar/gluegen-rt-natives-macosx-i586.jar" os="Mac OS X" arch="ppc" />
 
-	<item link="http://www.havenandhearth.com/java/jogl/current/jar/jogl-all-natives-macosx-universal.jar" file="jogl-natives-macosx-universal.jar" os="Mac OS X" arch="x86_64" />
+	<item link="http://www.havenandhearth.com/java/jogl/current/jar/jogl-all-natives-macosx-universal.jar" file="jogl-all-natives-macosx-universal.jar" os="Mac OS X" arch="x86_64" />
 	<item link="http://www.havenandhearth.com/java/jogl/current/jar/gluegen-rt-natives-macosx-universal.jar" os="Mac OS X" arch="x86_64" />
 
-	<item link="http://www.havenandhearth.com/java/jogl/current/jar/jogl-all.jar" file="jogl.jar"/>
+	<item link="http://www.havenandhearth.com/java/jogl/current/jar/jogl-all.jar" file="jogl-all.jar"/>
 	<item link="http://www.havenandhearth.com/java/jogl/current/jar/gluegen-rt.jar"/>
 	<item link="http://game.havenandhearth.com/java/hafen-res.jar" file="hafen-res.jar" />
 	<item link="http://game.havenandhearth.com/java/builtin-res.jar"  file="builtin-res.jar" />
